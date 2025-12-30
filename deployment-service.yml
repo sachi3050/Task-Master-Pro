@@ -17,7 +17,7 @@ spec:
           image: sachidananda06/task-master:pro1 # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
-            - containerPort: 8082 # The port that the container is running on in the cluster
+            - containerPort: 8083 # The port that the container is running on in the cluster
 
 
 ---
@@ -32,5 +32,5 @@ spec:
   ports:
     - protocol: "TCP"
       port: 80
-      targetPort: 8082 
+      targetPort: 8083 
   type: LoadBalancer # type of the service.
